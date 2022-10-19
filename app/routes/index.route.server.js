@@ -1,5 +1,9 @@
 import { Router } from "express";
-import { displayContactPage, displayHomePage, displayProjectsPage, displayServicesPage, displayAboutPage } from "../controllers/index.controller.server.js";
+import { displayAboutPage, 
+    displayContactPage, 
+    displayHomePage, 
+    displayProjectsPage, 
+    displayServicesPage } from "../controllers/index.controller.server.js";
 
 const router = Router();
 

@@ -1,10 +1,3 @@
-/*
-File name: app.css
-Student Name: Alexander Damovski
-Student ID: 301192233
-Date: October 1, 2022 
-*/
-
 // Third-Party Modules
 import express from 'express';
 import cookieParser from 'cookie-parser';
@@ -35,8 +28,8 @@ import { MongoURI, Secret } from '../config/config.js';
 
 // Import Routes
 import indexRouter from './routes/index.route.server.js'
-// import movieRouter from './routes/movies.route.server.js';
-// import authRouter from './routes/auth.route.server.js';
+import movieRouter from './routes/movies.route.server.js';
+import authRouter from './routes/auth.route.server.js';
 
 // Instantiate Express Application
 const app = express();
@@ -86,8 +79,8 @@ passport.deserializeUser(User.deserializeUser());
 
 // Use Routes
 app.use('/', indexRouter);
-// app.use('/', movieRouter);
-// app.use('/', authRouter);
+app.use('/', movieRouter);
+app.use('/', authRouter);
 
 
 export default app;
