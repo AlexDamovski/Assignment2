@@ -1,0 +1,67 @@
+/*
+File name: app.css
+Student Name: Alexander Damovski
+Student ID: 301192233
+Date: October 1, 2022 
+*/
+
+body {
+    min-height: 100%;
+    background-image: repeating-linear-gradient(lightblue, gray);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 1350px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+table,
+td {
+    border-collapse: separate;
+    border-collapse: collapse;
+    border-radius: 10px;
+    padding: 5px;
+    margin-right: auto;
+    margin-left: auto;
+    vertical-align: top;
+}
+
+
+
+.SectionTitle {
+    background-color: #d0d4cd;
+}
+
+/* used for Contact page for layout */
+#allPage {
+    width: 900px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 20px;
+    padding: 6px;
+    
+}
+
+.fieldLabel {
+    text-align: left;
+    border-bottom: 2px solid black
+}
+
+.firstTable {
+    width: 800px;
+}
+
+hr {
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+}
+
+#openTitle{
+    text-align: center;
+}
+
+.homePage{
+    width: 900px;
+    margin-right: auto;
+    margin-left: auto;
+}
