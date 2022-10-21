@@ -5,7 +5,7 @@ import {  DisplayContactList,
     ProcessContactAddPage, 
     ProcessContactEditPage, 
     DisplayContactEditPage, 
-    ProcessContactDelete } from "../controllers/movies.controller.server.js";
+    ProcessContactDelete } from "../controllers/contact.controller.server.js";
 
 import { AuthGuard } from "../utils/index.js";
 
