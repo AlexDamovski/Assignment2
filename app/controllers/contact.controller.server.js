@@ -38,13 +38,13 @@ export function ProcessContactAddPage(req, res, next){
 export function DisplayContactEditPage(req, res, next){
     let id = req.params.id;
 
-    contactList.findById(id, (err, movie) => {
+    contactList.findById(id, (err, contact) => {
         if(err){
             console.error(err);
             res.end(err);
         }
 
-        res.render('index', { title: 'Edit Contact', page: 'contact/edit', ContactList: contact, displayName: UserDisplayName(req) });
+        res.render('index', { title: 'Edit Contact', page: 'contact/edit', contact: contact, displayName: UserDisplayName(req) });
     });    
 }
 
@@ -52,7 +52,7 @@ export function ProcessContactEditPage(req, res, next){
 
     let id = req.params.id;
     
-    let newMovie = contactList({
+    let newContact = ({
             name: req.body.name,
             number: req.body.number,
             email: req.body.email
