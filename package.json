@@ -1,13 +1,13 @@
 {
-  "name": "comp229-f2022-week2",
+  "name": "comp229-f2022-Assignment2",
   "version": "0.0.1",
-  "description": "comp229 week2 example",
+  "description": "The is the 2nd assignment for COMP229",
   "main": "server.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Thiago Castilho",
+  "author": "Alexander Damovski",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.20.0",
