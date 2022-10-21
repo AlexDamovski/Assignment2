@@ -2,6 +2,8 @@ import contactList from '../models/contactList.js';
 
 import { UserDisplayName } from '../utils/index.js';
 
+
+//Diplays the contacts in the datebase
 export function DisplayContactList(req, res, next){
     contactList.find(function(err, contactCollection) {
         if(err){
@@ -13,10 +15,13 @@ export function DisplayContactList(req, res, next){
     })
 }
 
+//display form the add contact to database
 export function DisplayContactAddPage(req, res, next){
     res.render('index', { title: 'Add Contact Information', page: 'contact/edit', contact: {}, displayName: UserDisplayName(req) });
 }
 
+
+//processes the information 
 export function ProcessContactAddPage(req, res, next){
     
     let newContact = contactList({
@@ -35,6 +40,7 @@ export function ProcessContactAddPage(req, res, next){
     } )
 }
 
+//displays edit page
 export function DisplayContactEditPage(req, res, next){
     let id = req.params.id;
 
@@ -48,6 +54,7 @@ export function DisplayContactEditPage(req, res, next){
     });    
 }
 
+//process any changes that were made
 export function ProcessContactEditPage(req, res, next){
 
     let id = req.params.id;
@@ -68,6 +75,7 @@ export function ProcessContactEditPage(req, res, next){
     } )
 }
 
+//process contact deletion 
 export function ProcessContactDelete(req, res, next){
     let id = req.params.id;
 
